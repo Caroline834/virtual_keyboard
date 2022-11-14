@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e7e7e7;
+
+}
+.container {
+  background-color: azure;
+  width: 990px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+  border: none;
+}
+
+.row > div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-shadow: inset 2px -2px 3px rgb(151, 148, 148), 2px -2px 3px white;
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+}
+.caps {
+  cursor: pointer;
+  width: 100px !important;
+}
+.enter {
+  width: 100px !important;
+}
+.backspace {
+  width: 80px !important;
+}
+.tab {
+  width: 80px !important;
+}
+.spacebar {
+  width: 50% !important;
+}
+.shift {
+  width: 130px !important;
+}
+.arrow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0;
+  border: none;
+  margin-left: 20px;
+  text-align: center;
+}
+.up {
+  width: 50px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: inset 2px -2px 3px gray;
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+}
+.down {
+  margin-bottom: 0px;
+  display: flex;
+}
+.down > div {
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 50px;
+  box-shadow: inset 2px -2px 3px gray;
+  cursor: pointer;
+}
+#upperBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 50px;
+}
+.displayBox {
+  width: 500px;
+  height: 30px;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  color:sienna;
+  font-weight: 800;
+}
+.description {
+  font-size: 20px;
+}
+#calculate {
+  width: 200px;
+  height: 20px;
+}
+.stringDatatype {
+  margin: 10px;
+}
+.string {
+  background-color: seashell;
+  padding: 10px;
+  margin: 15px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: -1px 1px 2px lightslategray;
+  box-shadow: outset 1px 1px 2px gainsboro;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.string:hover {
+  transform: scale(1.1);
+  background-color: #333;
+  color: lawngreen;
+}
+.alphabet {
+  width: 30px;
+  height: 20px;
+}
+.row > div:hover {
+  background-color: lightslategray;
+  color: cyan;
+  font-weight: 800;
+}
+#capsLock:checked .alphabet{
+  text-transform: uppercase;
+  color: red;
+  background-color: hotpink;
+}
+#capsLock:checked > label.caps{
+  color: salmon;
+}
